@@ -41,9 +41,9 @@ public class Vector3d {
 		return newVector;
 	}
 
-	public Vector3d scalarOfVectors(Vector3d vector) {
-		Vector3d newVector = new Vector3d(vector.x * x, vector.y * y, vector.z * z);
-		return newVector;
+	public double scalarOfVectors(Vector3d vector) {
+		 double scalar = vector.x * x + vector.y * y + vector.z * z;
+		return scalar;
 	}
 
 	public Vector3d vectorOfVectors(Vector3d vector) {
